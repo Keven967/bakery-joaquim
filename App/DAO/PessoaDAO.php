@@ -6,11 +6,11 @@ class PessoaDAO
 
     public function __construct()
     {
-        $dsn = 'mysql:host=localhost:3306; dbname=bakery_joaquim';
+        $dsn = 'mysql:host=localhost:3306; dbname=ferreira-ferros';
 
         try {
 
-            $this->acesso_banco = new PDO($dsn, 'possati', '123456');
+            $this->acesso_banco = new PDO($dsn, 'root', '');
 
         } catch (PDOException $e) {
 
